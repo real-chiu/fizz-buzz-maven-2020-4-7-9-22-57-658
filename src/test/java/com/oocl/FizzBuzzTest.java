@@ -8,7 +8,7 @@ public class FizzBuzzTest {
     public void should_return_number_if_not_multiple_of_three_or_five () {
         FizzBuzz fizzBuzz = new FizzBuzz();
         String result = fizzBuzz.checkFizzBuzz(1);
-        Assert.assertEquals(result, 1);
+        Assert.assertEquals(result, "1");
     }
 
 }
