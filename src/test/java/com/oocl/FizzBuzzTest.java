@@ -29,4 +29,13 @@ public class FizzBuzzTest {
         Assert.assertEquals("Buzz", resultTwo);
     }
 
+    @Test
+    public void should_return_FizzBuzz_if_multiple_of_fifteen () {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String result = fizzBuzz.checkFizzBuzz(15);
+        String resultTwo = fizzBuzz.checkFizzBuzz(30);
+        Assert.assertEquals("FizzBuzz", result);
+        Assert.assertEquals("FizzBuzz", resultTwo);
+    }
+
 }
