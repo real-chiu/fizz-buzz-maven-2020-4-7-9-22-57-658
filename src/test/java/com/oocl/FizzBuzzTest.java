@@ -20,4 +20,13 @@ public class FizzBuzzTest {
         Assert.assertEquals("Fizz", resultTwo);
     }
 
+    @Test
+    public void should_return_Buzz_if_multiple_of_five () {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String result = fizzBuzz.checkFizzBuzz(5);
+        String resultTwo = fizzBuzz.checkFizzBuzz(10);
+        Assert.assertEquals("Buzz", result);
+        Assert.assertEquals("Buzz", resultTwo);
+    }
+
 }
