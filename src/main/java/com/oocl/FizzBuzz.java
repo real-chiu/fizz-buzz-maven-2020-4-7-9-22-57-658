@@ -2,15 +2,13 @@ package com.oocl;
 
 public class FizzBuzz {
     public String checkFizzBuzz(int number) {
-        if (number % 15 == 0) {
-            return "FizzBuzz";
-        }
+        String result = "";
         if (number % 3 == 0) {
-            return "Fizz";
+            result += "Fizz";
         }
         if (number % 5 == 0) {
-            return "Buzz";
+            result += "Buzz";
         }
-        return Integer.toString(number);
+        return result == "" ? Integer.toString(number) : result;
     }
 }
